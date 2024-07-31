@@ -1,0 +1,497 @@
+/* General Styles */
+body {
+    background-color: #1e1d1d;
+    
+}
+
+  
+/* Header Styling */
+.header {
+    border-bottom: 0px solid #080808;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #000000;
+    padding: 0px;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: black;
+}
+
+.nav-link {
+    /* margin-right: 40px; */
+    color: white !important;
+    font-size: 16px;
+    transition: font-size 0.2s ease, text-decoration 0.2s ease;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.navbar-brand img {
+    margin-left: 50px;
+    height: 40px;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 80px;
+  
+}
+
+.nav-item {
+    margin-left: 100px;
+   
+}
+
+.custom-search-input {
+    background-color: rgb(29, 28, 28) !important;
+    color: rgb(231, 224, 224) !important;
+    border: 1px solid white !important;
+}
+.custom-search-input::placeholder {
+    color: rgb(255, 255, 255) !important;
+}
+.custom-search-button {
+    color: rgb(237, 227, 227) !important;
+    border: 1px solid white !important;
+
+}
+
+.custom-search-button i {
+    color: white; /* Set icon color to white */
+}
+.play-icon-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px; 
+    height: 100px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5); 
+   
+}
+.play-icon {
+    position: relative;
+    width: 40px; 
+    height: 40px; 
+    clip-path: polygon(20% 20%, 80% 50%, 20% 80%);
+    background-color: white; 
+}
+
+/* Carousel styling */
+
+.carousel {
+    position: relative;
+    height: 90vh;
+    width: 100vw;
+    border-radius: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5); /* Light black overlay */
+}
+
+/* Carousel inner container styling */
+.carousel-inner {
+    height: 100%;
+}
+
+/* Carousel item styling */
+.carousel-item {
+    height: 100%;
+    position: relative;
+}
+
+/* Image styling */
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    opacity: 1;
+}
+
+/* Caption styling */
+.carousel-caption {
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for captions */
+    width: 700px;
+    padding: 1rem;
+    border-radius: 10px;
+    transform: scale(1);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2%; /* Adjust this value to position the caption vertically */
+    position: absolute;
+}
+
+/* Caption hover effect */
+.carousel-caption:hover {
+    transform: translateX(-50%) scale(1.1); /* Ensure the caption stays centered when scaled up */
+}
+/* end of carousrl  */
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+.card.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.card-body {
+    padding: 9px;
+    flex-grow: 1;
+    display:flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.card-img-top {
+    height: auto;
+    object-fit: cover;
+}
+.card-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+.card-text {
+    font-size: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    /* -webkit-line-clamp: 3; */
+    -webkit-box-orient: vertical;
+    white-space: normal;
+} 
+  
+
+.container {
+    padding-top: 20px;
+}
+.container h2{
+    margin-bottom: 50px;
+    /* margin-left: -1030px; */
+    padding: 10px;
+    align-items:start;
+}
+
+.scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    z-index: 1;
+}
+.left-button { left: 0; }
+.right-button { right: 0; }
+.dot-navigation {
+    text-align: center;
+    margin-top: 0px;
+}
+ .dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active, .dot:hover, .dot.card-hover {
+    background-color: #fff;
+    transform: scale(1.2);
+} 
+
+.dot-navigation.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot-navigation.dot.card-hover {
+    transform: scale(1.5);
+    background-color: #fff;
+}
+
+
+
+/* dot navigation end */
+.match-highlights-scroll,
+.moment-scroll {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    
+}
+
+.match-highlights-scroll .card,
+.moment-scroll .card {
+    flex: 0 0 auto;
+}
+
+.highlights {
+    position: relative;
+    overflow: hidden;
+    padding: 0 15px;
+}
+
+.highlights .container {
+    padding: 0;
+}
+
+.highlights-container {
+    position: relative;
+}
+
+.scroll-button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+    transform: translateY(-50%);
+}
+
+.highlight-left-button {
+    left: -50px;
+}
+
+.highlight-right-button {
+  
+    right: -40px;
+}
+
+.highlight-scroll {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    padding-bottom: 10px; /* Space for scrollbar */
+}
+
+.highlight-scroll::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Webkit browsers */
+}
+
+.highlight-scroll .card {
+    display: inline-block;
+    width: 100%;
+    max-width: 300px; /* Adjust width as needed */
+    margin-right: 15px; /* Spacing between cards */
+}
+
+/* Scroll Button Styles */
+
+
+.moments{
+    width: 100vw;
+    margin-left: -15px;
+    margin-top: 100px;
+    background: #000;
+    height: 500px;
+    padding: 5px;
+}
+
+.moments-container {
+    /* overflow: hidden; */
+    position: relative;
+}
+.moments-container h2 {
+  margin-top: 30px;
+  /* margin-left: -970px; */  
+  padding: 5px;
+}
+
+
+
+/* Scroll Buttons */
+.scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(104, 94, 94, 0.419);
+    color: white;
+    border:none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 20%; /* Circle shape */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Ensure the radiating effect stays within the button */
+}
+
+.scroll-button.left-button {
+    position: absolute;
+    left: -40px; /* Move more to the left */
+}
+
+.scroll-button.right-button {
+    position:absolute;
+    margin-top: 40px;
+    right: -40px; /* Move more to the right */
+}
+
+.scroll-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.scroll-button:active {
+    animation: radiate 0.5s ease-out;
+}
+
+/* Radiant Animation Effect */
+@keyframes radiate {
+    0% {
+        box-shadow: 0 0 0 rgba(250, 250, 250, 0.8);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+    }
+    100% {
+        box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+/* POTM Buttons */
+.POTM-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    border-radius: 20%;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.POTM-button.left-button {
+    left: -40px;
+}
+
+.POTM-button.right-button {
+    right: -40px;
+}
+
+.POTM-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.POTM-button:active {
+    animation: radiate 0.5s ease-out;
+}
+
+
+/* end potm  */
+.POTM-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(104, 94, 94, 0.419);
+    color: white;
+    border:none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 20%; /* Circle shape */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Ensure the radiating effect stays within the button */
+
+}
+
+.POTM-button.left-button {
+    left: -40px; /* Move more to the left */
+}
+
+.POTM-button.right-button {
+    right: -40px; /* Move more to the right */
+}
+
+.POTM-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.POTM-button:active {
+    animation: radiate 0.5s ease-out;
+}
+
+/* Radiant Animation Effect */
+@keyframes radiate {
+    0% {
+        box-shadow: 0 0 0 rgba(250, 250, 250, 0.8);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+    }
+    100% {
+        box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+.POTM {
+    position: relative;
+  
+    padding: 20px 0;
+  }
+
+.POTM-container {
+    
+    position: relative;
+}
+
+
+.POTM-scroll {
+   
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x:hidden;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
+
+
+.footer-section {
+    margin-top:-175px ;
+    margin-left: 70%;
+ 
+    color: white;
+    padding: 10px;
+   
+}
+
+
+

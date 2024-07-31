@@ -1,0 +1,22 @@
+[
+    {"Rank": 1, "Player": "Rahmanullah Gurbaz", "Runs": 281, "Height Score": 80, "Strike Rate": 124.33, "Four": 18, "Six": 16,"Photo": "img/Rahmanullah_Gurbaz.png" },
+    {"Rank": 2, "Player": "Rohit Sharma", "Runs": 257, "Height Score": 92, "Strike Rate": 156.7, "Four": 24, "Six": 15,"Photo": "img/Rohit_sharma.jpg"},
+    {"Rank": 3, "Player": "Travis Head", "Runs": 255, "Height Score": 76, "Strike Rate": 158.38, "Four": 26, "Six": 15 ,"Photo": "img/Travis_Head.png"},
+    {"Rank": 4, "Player": "Quinton de Kock", "Runs": 243, "Height Score": 74, "Strike Rate": 140.46, "Four": 21, "Six": 13 ,"Photo": "img/Qde_kock.png"},
+    {"Rank": 5, "Player": "Ibrahim Zadran", "Runs": 231, "Height Score": 70, "Strike Rate": 107.44, "Four": 25, "Six": 4 ,"Photo": "img/Ibrahim.png"},
+    {"Rank": 6, "Player": "Nicholas Pooran", "Runs": 228, "Height Score": 98, "Strike Rate": 146.15, "Four": 15, "Six": 17 ,"Photo": "img/N_pooran.png"},
+    {"Rank": 7, "Player": "Andries Gous", "Runs": 219, "Height Score": 80, "Strike Rate": 151.03, "Four": 20, "Six": 11 ,"Photo": "img/Andries_Gous.png"},
+    {"Rank": 8, "Player": "Jos Buttler", "Runs": 214, "Height Score": 83, "Strike Rate": 158.51, "Four": 22, "Six": 10 ,"Photo": "img/jos_buttler.png"},
+    {"Rank": 9, "Player": "Suryakumar Yadav", "Runs": 199, "Height Score": 53, "Strike Rate": 135.37, "Four": 15, "Six": 10 ,"Photo": "img/Suryakumar_Yadav.png"},
+    {"Rank": 10, "Player": "Heinrich Klaasen", "Runs": 190, "Height Score": 52, "Strike Rate": 126.66, "Four": 9, "Six": 13 ,"Photo": "img/Klaasen.png"},
+    {"Rank": 11, "Player": "Phil Salt", "Runs": 188, "Height Score": 87, "Strike Rate": 159.32, "Four": 16, "Six": 10 ,"Photo": "img/Phil_Salt.png"},
+    {"Rank": 12, "Player": "David Warner", "Runs": 178, "Height Score": 56, "Strike Rate": 139.06, "Four": 17, "Six": 9 ,"Photo": "img/david_warner.png"},
+    {"Rank": 13, "Player": "Rishabh Pant", "Runs": 171, "Height Score": 42, "Strike Rate": 127.61, "Four": 19, "Six": 6 ,"Photo": "img/R_pant.png"},
+    {"Rank": 14, "Player": "Marcus Stoinis", "Runs": 169, "Height Score": 67, "Strike Rate": 164.07, "Four": 14, "Six": 10 ,"Photo": "img/marcus_Stoinis.png"},
+    {"Rank": 15, "Player": "David Miller", "Runs": 169, "Height Score": 59, "Strike Rate": 102.42, "Four": 10, "Six": 8 ,"Photo": "img/david_miller.png"},
+    {"Rank": 16, "Player": "Tristan Stubbs", "Runs": 165, "Height Score": 33, "Strike Rate": 101.22, "Four": 13, "Six": 3 ,"Photo": "img/Tristan_Stubbs.png"},
+    {"Rank": 17, "Player": "Aaron Jones", "Runs": 162, "Height Score": 94, "Strike Rate": 135, "Four": 8, "Six": 14 ,"Photo": "img/Aaron_joans.png"},
+    {"Rank": 18, "Player": "Towhid Hridoy", "Runs": 153, "Height Score": 40, "Strike Rate": 128.57, "Four": 9, "Six": 8 ,"Photo": "img/Towhid_Hridoy.png"},
+    {"Rank": 19, "Player": "Virat Kohli", "Runs": 151, "Height Score": 76, "Strike Rate": 112.68, "Four": 8, "Six": 7 ,"Photo": "img/virat_Kohli.png"},
+    {"Rank": 20, "Player": "Harry Brook", "Runs": 145, "Height Score": 53, "Strike Rate": 157.6, "Four": 16, "Six": 2 ,"Photo": "img/Harrry_Brook_.png"}
+]

@@ -1,0 +1,6 @@
+[
+  { "No": 1, "Teams": "SOUTH AFRICA", "M": 3, "W": 3, "L": 0, "Pt": 6, "NRR": 0.599 },
+  { "No": 2, "Teams": "ENGLAND", "M": 3, "W": 2, "L": 1, "Pt": 4, "NRR": 1.992 },
+  { "No": 3, "Teams": "WEST INDIES", "M": 3, "W": 1, "L": 2, "Pt": 2, "NRR": 0.963 },
+  { "No": 4, "Teams": "USA", "M": 3, "W": 0, "L": 3, "Pt": 0, "NRR": -3.906 }
+]

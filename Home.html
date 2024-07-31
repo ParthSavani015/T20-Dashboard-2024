@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T20 Worldcup Men's 2024</title>
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="stylesheet" href="style_Home.css">
+</head>
+
+<body>
+  <div class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.png" alt="Logo" style="height: 40px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="Home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="analysis.html">Analysis</a>
+          </li>
+        </ul>
+        <form id="searchForm" class="d-flex" role="search" method="GET" action="search_results.html">
+          <input class="form-control me-2 custom-search-input" type="search" placeholder="Search" aria-label="Search"
+            name="query">
+          <button class="btn btn-outline-dark custom-search-button" type="submit">
+            <i class="bi bi-search"></i> <!-- Bootstrap search icon -->
+          </button>
+        </form>
+
+      </div>
+    </nav>
+
+
+
+
+    <!-- Carousel -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <a href="video\Final_showdown.mp4">
+          <div class="carousel-item active">
+            <img src="photos\GettyImages-2159843081.jpg" class="d-block w-100" alt="Image 1">
+            <div class="play-icon-container">
+              <div class="play-icon"></div>
+            </div>
+        </a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>T20 World Champions 2024</h5>
+          <p>Historic win for India! After 17 years, they reclaim the T20 World Cup title in a nail-biting final,
+            reigniting national pride and cricketing glory.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <a href="video\tribute_rahuldravid.mp4">
+          <img src="photos/RahulDravid_celebration.jpg" class="d-block w-100" alt="Image 2">
+          <div class="play-icon-container">
+            <div class="play-icon"></div>
+          </div>
+        </a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5> The Incredible Coach: Rahul Dravid </h5>
+          <p>Once faced setbacks as a captain, now leading with triumph as a coach. Turned our past challenges into our
+            greatest victory in this World Cup, in his final match as the coach.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <a href="video\hardik's_word.mp4">
+          <img src="photos/hardik_bg-champions.jpg" class="d-block w-100" alt="Image 3">
+          <div class="play-icon-container">
+            <div class="play-icon"></div>
+          </div>
+        </a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Hardik's Golden Words</h5>
+          <p>Once booed by the nation, Hardik Pandya's journey from being hated to becoming a beloved hero is truly
+            inspirational.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <a href="video\team-Lift_rahuldravid.mp4">
+          <img src="photos/Team-India-Cricketers-With-Rahul-Dravid.jpg" class="d-block w-100" alt="Image 4">
+          <div class="play-icon-container">
+            <div class="play-icon"></div>
+          </div>
+        </a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Farewell to The Coach</h5>
+          <p>Celebrating Rahul Dravid’s Remarkable Journey from Player to Coach.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  </div>
+
+
+
+
+
+  <!-- Match Highlights Section -->
+
+  <div class="highlights">
+    <div class="container highlights-container mt-5">
+      <h2 class="text-center text-white">HIGHLIGHTS</h2>
+      <div class="position-relative">
+        <button class="scroll-button highlight-left-button" onclick="scrollLeftHighlights()">&#60;</button>
+        <div class="row flex-row flex-nowrap highlight-scroll" id="highlightsContainer">
+          <div class="col-md-3 mb-4">
+            <div class="card bg-dark text-white">
+              <div class="card-body">
+                <a
+                  href="https://www.hotstar.com/in/sports/cricket/tournaments/icc-mens-t20-world-cup-2024/1260164072/invincible-ind-ace-sa-lift-2nd-title/1540029928/sports-match-highlights/watch">
+                  <img src="photos/ind vs SA.jpg" class="card-img-top" alt="Highlight 1">
+                </a>
+                <h5 class="card-title"> Final: IND VS SA</h5>
+                <p class="card-text">Final showdown Between India Vs South Africa </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card bg-dark text-white">
+              <div class="card-body">
+                <a
+                  href="https://www.hotstar.com/in/sports/cricket/tournaments/icc-mens-t20-world-cup-2024/1260164072/redemption-ind-slay-eng-enter-final/1540029925/sports-match-highlights/watch">
+                  <img src="photos\ind vs eng .jpg" class="card-img-top" alt="Highlight 2">
+                </a>
+                <h5 class="card-title">Semi-Final : IND VS ENG</h5>
+                <p class="card-text">A speactacular entry to final | Match Highlights | T20WC 2024</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card bg-dark text-white">
+              <div class="card-body">
+                <a
+                  href="https://www.hotstar.com/in/sports/cricket/tournaments/icc-mens-t20-world-cup-2024/1260164072/historic-afg-enter-sfs-ban-aus-out/1540029919/sports-match-highlights/watch">
+                  <img src="photos\afg vs ban .jpg" class="card-img-top" alt="Highlight 3">
+                </a>
+                <h5 class="card-title">Knock-out: AFG VS BAN</h5>
+                <p class="card-text">Spirited AFG enter T20 WC semi-finals | Match Highlights | T20WC 2024</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card bg-dark text-white">
+              <div class="card-body">
+                <a
+                  href="https://www.hotstar.com/in/sports/cricket/tournaments/icc-mens-t20-world-cup-2024/1260164072/unbeaten-sa-hunt-wi-enter-sfs/1540029913/sports-match-highlights/watch ">
+                  <img src="photos\WI vs SA.jpg" class="card-img-top" alt="Highlight 4">
+                </a>
+                <h5 class="card-title">Match: WI VS SA</h5>
+                <p class="card-text">SA overcome WI grit to continue unbeaten run into semi-finals</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card bg-dark text-white">
+              <div class="card-body">
+                <a
+                  href="https://www.hotstar.com/in/sports/cricket/tournaments/icc-mens-t20-world-cup-2024/1260164072/vengeful-ind-bury-aus-down-under/1540029916/sports-match-highlights/watch">
+                  <img src="photos\ind vs aus .jpg" class="card-img-top" alt="Highlight 5">
+                </a>
+                <h5 class="card-title">Match: IND VS AUS</h5>
+                <p class="card-text">Rohit sharma Will Take Revenge against Australia | T20WC 2024 </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card bg-dark text-white">
+              <div class="card-body">
+                <a
+                  href="https://www.hotstar.com/in/sports/cricket/tournaments/icc-mens-t20-world-cup-2024/1260164072/sa-crush-afg-to-enter-maiden-wc-final/1540029922/sports-match-highlights/watch">
+                  <img src="photos\SA vs AFG .jpg" class="card-img-top" alt="Highlight 6">
+                </a>
+                <h5 class="card-title">Match: SA VS AFG</h5>
+                <p class="card-text">WI top Group C with a comprehensive Win | Match Highlights | T20WC 2024</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card bg-dark text-white">
+              <div class="card-body">
+                <a
+                  href="https://www.hotstar.com/in/sports/cricket/tournaments/icc-mens-t20-world-cup-2024/1260164072/resurgent-ind-fight-back-to-down-pak/1540029838/sports-match-highlights/watch">
+                  <img src="photos\ind vs pak .jpg" class="card-img-top" alt="Highlight 7">
+                </a>
+                <h5 class="card-title">Match: IND VS PAK</h5>
+                <p class="card-text"> India continued their tradition of domainance over pakistan</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card bg-dark text-white">
+              <div class="card-body">
+                <a
+                  href="https://www.hotstar.com/in/sports/cricket/tournaments/icc-mens-t20-world-cup-2024/1260164072/ind-thrash-bdesh-to-warm-up-in-style/1540030673/sports-match-highlights/watch">
+                  <img src="photos\ind vs Ban.jpg" class="card-img-top" alt="Highlight 8">
+                </a>
+                <h5 class="card-title">Match: IND VS BAN </h5>
+                <p class="card-text">India boost semi-final chances | Match Highlights | T20WC 2024 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="scroll-button highlight-right-button" onclick="scrollRight()">&gt;</button>
+      </div>
+      <div class="dot-navigation" id="dotNavigation"></div>
+    </div>
+
+
+    <!-- Moment Section -->
+
+    <div class="moments">
+      <div class="container moments-container mt-5">
+        <h2 class="text-center text-white">MUST WATCH MOMENTS</h2>
+        <div class="position-relative">
+          <button class="scroll-button left-button" onclick="scrollLeft('MomentsContainer')">&lt;</button>
+          <div class="row flex-row flex-nowrap moment-scroll" id="MomentsContainer">
+            <div class="col-md-3 mb-4">
+              <div class="card bg-dark text-white">
+                <div class="card-body">
+                  <a href="https://www.hotstar.com/in/sports/cricket/29-off-6-hitman-pummels-starc/1271320707/watch">
+                    <img src="photos/moment_img/RO-92.jpg" class="card-img-top" alt="Moment 1">
+                  </a>
+                  <h5 class="card-title">29 off 6! Hitman Pummels Starc</h5>
+                  <!-- <p class="card-text">Brief description of the moment...</p> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card bg-dark text-white">
+                <div class="card-body">
+                  <a
+                    href="https://www.hotstar.com/in/sports/cricket/joy-and-sorrow-how-ind-sa-reacted/1271321328/watch">
+                    <img src="photos/moment_img/champ_RO-KO.jpg" class="card-img-top" alt="Moment 2">
+                  </a>
+                  <h5 class="card-title">RO-KO are done there job</h5>
+                  <p class="card-text">The backbone of Indian cricket</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card bg-dark text-white">
+                <div class="card-body">
+                  <a
+                    href="https://www.hotstar.com/in/sports/cricket/klaasens-last-ball-run-out-saves-sa/1271319624/watch">
+                    <img src="photos/moment_img/1run_lose.jpg" class="card-img-top" alt="Moment 3">
+                  </a>
+                  <h5 class="card-title">Klaasen's Last-Ball Run-out Saves SA</h5>
+                  <!-- <p class="card-text">Brief description of the moment...</p> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card bg-dark text-white">
+                <div class="card-body">
+                  <a
+                    href="https://www.hotstar.com/in/sports/cricket/drama-gurbaz-stoinis-go-head-to-head/1271320631/watch">
+                    <img src="photos/moment_img/gurbaz_hit.jpg" class="card-img-top" alt="Moment 4">
+                  </a>
+                  <h5 class="card-title">Drama! Gurbaz-Stoinis Go Head to Head</h5>
+                  <!-- <p class="card-text">Brief description of the moment...</p> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card bg-dark text-white">
+                <div class="card-body">
+                  <a
+                    href="https://www.hotstar.com/in/sports/cricket/patrick-hat-trick-cummins-joins-lee/1271320359/watch">
+                    <img src="photos/moment_img/pat_hattrick.jpg" class="card-img-top" alt="Moment 5">
+                  </a>
+                  <h5 class="card-title">Patrick Hat trick! Cummins Joins Lee</h5>
+                  <!-- <p class="card-text">Brief description of the moment...</p> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card bg-dark text-white">
+                <div class="card-body">
+                  <a href="https://www.hotstar.com/in/sports/cricket/clutch-catch-sky-stuns-miller-sa/1271321327/watch">
+                    <img src="photos/moment_img/sky_catch.jpg" class="card-img-top" alt="Moment 6">
+                  </a>
+                  <h5 class="card-title">Clutch Catch! SKY Stuns Miller & SA</h5>
+                  <!-- <p class="card-text">Brief description of the moment...</p> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card bg-dark text-white">
+                <div class="card-body">
+                  <a
+                    href="https://www.hotstar.com/in/sports/cricket/cummins-eat-sleep-hat-trick-repeat/1271320529/watch">
+                    <img src="photos/moment_img/pat_hattrick2.jpg" class="card-img-top" alt="Moment 7">
+                  </a>
+                  <h5 class="card-title">Cummins! Eat,Sleep, Hat-trick , Repeat</h5>
+                  <!-- <p class="card-text">Brief description of the moment...</p> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card bg-dark text-white">
+                <div class="card-body">
+                  <a href="https://www.hotstar.com/in/sports/cricket/hilarious-naibs-time-wasting-act/1271320866/watch">
+                    <img src="photos/moment_img/LOL_moments.jpg" class="card-img-top" alt="Moment 8">
+                  </a>
+                  <h5 class="card-title">Hilarious! Naib's Time Wasting Act</h5>
+                  <!-- <p class="card-text">Brief description of the moment...</p> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card bg-dark text-white">
+                <div class="card-body">
+                  <a href="https://www.hotstar.com/in/sports/cricket/4-4-0-3-fergusons-historic-spell/1271319483/watch">
+                    <img src="photos/moment_img/lokie_SO.jpg" class="card-img-top" alt="Moment 9">
+                  </a>
+                  <h5 class="card-title">4-4-0-3! Fergusons Historic Spell</h5>
+                  <!-- <p class="card-text">Brief description of the moment...</p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="scroll-button right-button" onclick="scrollRight('MomentsContainer')">&gt;</button>
+      </div>
+      <div class="dot-navigation" id="momentsDotNavigation"></div>
+    </div>
+  </div>
+
+
+  <!--POTM  -->
+  <div class="POTM">
+    <div class="container POTM-container mt-5">
+        <h2 class="text-center text-white">PLAYER OF THE MATCH</h2>
+        <div class="position-relative">
+            <button class="POTM-button left-button">&lt;</button>
+            <div id="POTMContainer" class="row flex-row flex-nowrap POTM-scroll">
+                <!-- Card 1 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card bg-dark text-white">
+                        <div class="card-body">
+                            <a href="https://www.icc-cricket.com/tournaments/t20cricketworldcup/videos/kohli-delivers-in-his-final-t20i-potm-highlights-sa-v-ind-t20wc-2024-final">
+                                <img src="photos/POTM/viratkohli_POTM.png" class="card-img-top" alt="Kohli POTM">
+                            </a>
+                            <p class="card-text">Kohli delivers in his final T20 | POTM Highlights | IND VS SA</p>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="col-md-3 mb-4">
+                    <div class="card bg-dark text-white">
+                        <div class="card-body">
+                            <a href="https://www.icc-cricket.com/tournaments/t20cricketworldcup/videos/adil-rashid-sizzles-with-brilliant-spell-potm-highlights-usa-v-eng-t20wc-2024">
+                                <img src="photos/POTM/Adil_POTM.jpg" class="card-img-top" alt="Adil Rashid POTM">
+                            </a>
+                            <p class="card-text">Adil Rashid sizzles With brilliant spell | POTM Highlights | USA VS ENG</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 mb-4">
+                    <div class="card bg-dark text-white">
+                        <div class="card-body">
+                            <a href="https://www.icc-cricket.com/tournaments/t20cricketworldcup/videos/axar-patel-s-decisive-spell-potm-highlights-ind-v-eng-t20wc-2024">
+                                <img src="photos/POTM/Axar_POTM.jpg" class="card-img-top" alt="Axar Patel POTM">
+                            </a>
+                            <p class="card-text">Axar Patel's decisive spell | POTM Highlights | IND VS ENG</p>
+                        </div>
+                    </div>
+                </div>
+          
+                <div class="col-md-3 mb-4">
+                    <div class="card bg-dark text-white">
+                        <div class="card-body">
+                            <a href="https://www.icc-cricket.com/videos/quinton-de-kock-s-big-game-potm-highlights-eng-v-sa-t20wc-2024">
+                                <img src="photos/POTM/dekock_POTM.png" class="card-img-top" alt="Quinton de Kock POTM">
+                            </a>
+                            <p class="card-text">Quinton de Kock's big game | POTM Highlights | ENG VS SA</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 mb-4">
+                    <div class="card bg-dark text-white">
+                        <div class="card-body">
+                            <a href="https://www.icc-cricket.com/videos/gulbadin-naib-s-clutch-spell-turns-the-tide-potm-highlights-t20wc-2024">
+                                <img src="photos/POTM/Gulbadin_POTM.png" class="card-img-top" alt="Gulbadin Naib POTM">
+                            </a>
+                            <p class="card-text">Gulbadin Naib's clutch spell turns the tide | POTM Highlights | AFG VS AUS</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 mb-4">
+                    <div class="card bg-dark text-white">
+                        <div class="card-body">
+                            <a href="https://www.icc-cricket.com/videos/lockie-ferguson-bowls-four-maidens-in-remarkable-display-nzvpng-potm-highlights-t20wc-2024">
+                                <img src="photos/POTM/lockie_POTM.png" class="card-img-top" alt="Lockie Ferguson POTM">
+                            </a>
+                            <p class="card-text">Lockie bowls 4 maidens in remarkable display | POTM Highlights | NZ VS PNG</p>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="col-md-3 mb-4">
+                    <div class="card bg-dark text-white">
+                        <div class="card-body">
+                            <a href="https://www.icc-cricket.com/videos/marco-jansen-s-new-ball-brilliance-runs-through-afghanistan-top-order-sf-1-potm-highlights-t20wc-2024">
+                                <img src="photos/POTM/Marco_Jansen's_POTM.png" class="card-img-top" alt="Marco Jansen POTM">
+                            </a>
+                            <p class="card-text">Marco's new-ball brilliance sets up historic SA win | POTM Highlights</p>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="col-md-3 mb-4">
+                    <div class="card bg-dark text-white">
+                        <div class="card-body">
+                            <a href="https://www.icc-cricket.com/videos/gamechanger-naveen-inspires-afghanistan-to-history-potm-highlights-t20wc-2024">
+                                <img src="photos/POTM/Naveen_POTM.png" class="card-img-top" alt="Naveen POTM">
+                            </a>
+                            <p class="card-text">Gamechanger Naveen inspires Afghanistan | POTM Highlights</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 mb-4">
+                    <div class="card bg-dark text-white">
+                        <div class="card-body">
+                            <a href="https://www.icc-cricket.com/videos/the-rohit-sharma-show-potm-highlights-aus-v-ind-t20wc-2024">
+                                <img src="photos/POTM/Rohit_POTM.jpeg" class="card-img-top" alt="Rohit Sharma POTM">
+                            </a>
+                            <p class="card-text">The Rohit Sharma Show | POTM Highlights | AUS VS IND</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 mb-4">
+                    <div class="card bg-dark text-white">
+                        <div class="card-body">
+                            <a href="https://www.icc-cricket.com/videos/shamsi-turns-it-around-for-south-africa-potm-highlights-t20wc-2024">
+                                <img src="photos/POTM/Shamsi_POTM.png" class="card-img-top" alt="Shamsi POTM">
+                            </a>
+                            <p class="card-text">Shamsi turns it around for South Africa | POTM Highlights | SA VS WI</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 mb-4">
+                    <div class="card bg-dark text-white">
+                        <div class="card-body">
+                            <a href="https://www.icc-cricket.com/videos/suryakumar-yadav-shines-in-india-s-win-potm-highlights-afg-v-ind-t20wc-2024">
+                                <img src="photos/POTM/sky_POTM.png" class="card-img-top" alt="Suryakumar Yadav POTM">
+                            </a>
+                            <p class="card-text">Suryakumar Yadav Shines In India's Win | POTM Highlights | AFG VS IND</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="POTMDotNavigation" class="dot-navigation"></div>
+            <button class="POTM-button right-button">&gt;</button>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-black text-white py-4">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-4 mb-3">
+              <h5>About Us</h5>
+              <p>Welcome to T20 World Cup Dashboard, your go-to platform for the ICC T20 World Cup 2024. We provide cricket enthusiasts with comprehensive information, including player statistics, match highlights, must-watch moments, and POTM highlights.</p>
+              
+          </div>
+          <div class="col-md-4 mb-3  footer-section">
+              <h5>Contact Us</h5>
+              <p>Email: <a href="parthsavani015@gmail.com" class="text-white">parthsavani015@gmail.com</a></p>
+              
+              <div class="mt-3">
+                  <a href="https://www.linkedin.com/in/parth-savani-bba1a1311/" class="text-white me-3" target="blank">
+                      <i class="fab fa-linkedin fa-2x"></i>
+                  </a>
+                  <a href="https://github.com/ParthSavani015" class="text-white me-3" target="blank">
+                      <i class="fab fa-github fa-2x"></i>
+                  </a>
+                  
+              </div>
+          </div>
+      </div>
+      <div class="text-center mt-4">
+          <p>&copy; 2024 Your Website. All rights reserved.</p>
+      </div>
+  </div>
+</footer>
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script_Home.js"></script>
+
+  <script>
+    document.getElementById('searchForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+      const query = document.querySelector('.custom-search-input').value;
+      window.location.href = `search_results.html?query=${encodeURIComponent(query)}`;
+    });
+  </script>
+
+
+</body>
+
+</html>

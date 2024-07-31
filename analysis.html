@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T20 Worldcup Men's 2024</title>
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles_analysis.css">
+</head>
+
+<body>
+  <div class="sidebar">
+    <img src="img/logo1.png" alt="Logo" class="logo">
+    <a class="nav-link active" aria-current="page" href="Home.html"><i class="las la-home" style="font-size:22px;"></i>
+      Home</a>
+    <a class="nav-link" href="index.html"><i class="las la-chalkboard" style="font-size:22px;"></i> Dashboard</a>
+    <a class="nav-link" href="analysis.html"><i class="las la-chart-bar" style="font-size:22px;"></i> Analysis</a>
+  </div>
+
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Analysis</h2>
+          <div class="analysis-box">
+            <h4> Group 1 Teams Performance Analysis</h4>
+            <canvas id="team-performance-chart"></canvas>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="analysis-box1">
+            <h4> Group 2 Teams Performance Analysis</h4>
+            <canvas id="group2-team-performance-chart"></canvas>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- pir chart -->
+    <div class="batsman-analysis-box">
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <h2>Players</h2>
+          <div id="player-list" class="container">
+            <div class="row">
+              <!-- Player buttons will be added here dynamically -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h2>Batting Statistics</h2>
+          <canvas id="player-pie-chart"></canvas>
+        </div>
+        <div class="col-md-4">
+          <h2>Player Photo</h2>
+          <img id="player-photo" src="default-photo.jpg" alt="Player Photo" class="img-fluid">
+          <h4 id="player-name" class="text-center mt-3">Player Name</h4>
+        </div>
+      </div>
+    </div>
+    <div class="bowling-analysis-box">
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <h2>Bowlers</h2>
+          <div id="bowler-list" class="container">
+            <div class="row">
+              <!-- Bowler buttons will be added here dynamically -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h2>Bowling Statistics</h2>
+          <canvas id="bowler-pie-chart"></canvas>
+        </div>
+        <div class="col-md-4">
+          <h2>Bowler Photo</h2>
+          <img id="bowler-photo" src="default-photo.jpg" alt="Bowler Photo" class="img-fluid">
+          <h4 id="bowler-name" class="text-center mt-3">Bowler Name</h4>
+        </div>
+      </div>
+    </div>
+    <div class="allrounder-analysis-box">
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <h2>All-Rounders</h2>
+          <div id="allrounder-list" class="container">
+            <div class="row">
+              <!-- All-rounder buttons will be added here dynamically -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h2>All-Rounder Statistics</h2>
+          <canvas id="allrounder-pie-chart"></canvas>
+        </div>
+        <div class="col-md-4">
+          <h2>All-Rounder Photo</h2>
+          <img id="allrounder-photo" src="default-photo.jpg" alt="All-Rounder Photo" class="img-fluid">
+          <h4 id="allrounder-name" class="text-center mt-3">All-Rounder Name</h4>
+        </div>
+      </div>
+    </div>
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script_analysis.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+
+body {
+    display: flex;
+    background-color: #262626;
+}
+
+.sidebar {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 361px;
+    height: auto;
+    background-color: #010;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    border-radius: 5px;
+}
+
+.sidebar a:hover {
+    background-color: #495057;
+}
+
+.nav-link {
+    color: rgb(255, 255, 255);
+}
+
+.nav-link:hover {
+    color: white !important;
+}
+
+.nav-link:visited {
+    color: rgb(246, 246, 246) !important;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #262626;
+    /* overflow-y: auto;  */
+}
+
+.content h1, .content h2, .content h4 {
+    color: #ddd;
+}
+
+.logo {
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.container {
+    margin-left: 1px;
+    padding: -10px;
+}
+
+.analysis-section {
+    margin-top: 0px;
+}
+
+.analysis-box {
+    background-color: #262626;
+    border: 3px solid #4d4f51;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.analysis-box h4 {
+    background-color: #010;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom:18px;
+}
+.analysis-box1 {
+    margin-top: 46px;
+    background-color: #262626;
+    border: 3px solid #4d4f51;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.analysis-box1 h4 {
+    background-color: #010;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom:18px;
+}
+ 
+
+
+.batsman-analysis-box {
+    background-color: #262626;
+    border: 3px solid #4d4f51;
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    border-radius: 8px; /* Border radius for the entire box */
+}
+
+.batsman-analysis-box h2 {
+    background-color: #010;
+    border-radius: 8px;
+    padding: 11px;
+    margin-bottom: 15px;
+    margin-top: -25px;
+}
+
+
+.batsman-analysis-box .col-md-4 {
+    padding: 0 px; /* Adjust padding within each column */
+}
+
+
+.batsman-analysis-box #player-photo {
+    border-radius: 8px; /* Apply border radius to the image */
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px; /* Adjust margin to space content properly */
+}
+.custom-btn {
+    background-color: #3f4140; /* Change this color to your desired color */
+    color: white;
+    border: none;
+}
+
+.custom-btn:hover {
+    color:#ddd;
+    background-color: #101110; /* Darker shade for hover effect */
+}
+
+
+.bowling-analysis-box {
+    background-color: #262626;
+    border: 3px solid #4d4f51;
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    border-radius: 8px; /* Border radius for the entire box */
+}
+
+.bowling-analysis-box h2 {
+    background-color: #010;
+    border-radius: 8px;
+    padding: 11px;
+    margin-bottom: 15px;
+    margin-top: -25px;
+}
+
+.bowling-analysis-box .col-md-4 {
+    padding: 0 px; /* Adjust padding within each column */
+}
+
+.bowling-analysis-box #bowler-photo {
+    border-radius: 8px; /* Apply border radius to the image */
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px; /* Adjust margin to space content properly */
+}
+.allrounder-analysis-box {
+    background-color: #262626;
+    border: 3px solid #4d4f51;
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    border-radius: 8px; /* Border radius for the entire box */
+}
+
+.allrounder-analysis-box h2 {
+    background-color: #010;
+    border-radius: 8px;
+    padding: 11px;
+    margin-bottom: 15px;
+    margin-top: -25px;
+}
+
+.allrounder-analysis-box .col-md-4 {
+    padding: 0 px; /* Adjust padding within each column */
+}
+
+.allrounder-analysis-box #allrounder-photo {
+    border-radius: 8px; /* Apply border radius to the image */
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px; /* Adjust margin to space content properly */
+}
+
+#player-photo {
+    max-width: 100%;
+    height: auto;
+}
+
+

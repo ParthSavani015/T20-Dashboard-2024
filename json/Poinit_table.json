@@ -1,0 +1,8 @@
+{
+    "Group1": [
+        {"No": 1,  "Team": "INDIA", "M": 3, "W": 3, "L": 0, "Pt": 6, "NRR": 2.017},
+        {"No": 2, "Team": "AFGHANISTAN", "M": 3, "W": 2, "L": 1, "Pt": 4, "NRR": -0.305},
+        {"No": 3, "Team": "AUSTRALIA", "M": 3, "W": 1, "L": 2, "Pt": 2, "NRR": -0.331},
+        {"No": 4, "Team": "BANGLADESH", "M": 3, "W": 0, "L": 3, "Pt": 0, "NRR": -1.709}
+    ]
+}

@@ -1,0 +1,24 @@
+{
+  "teamPerformance": [
+    {
+      "team": "South Africa",
+      "wins": 7,
+      "losses": 0
+    },
+    {
+      "team": "England",
+      "wins": 4,
+      "losses": 3
+    },
+    {
+      "team": "West Indies",
+      "wins": 5,
+      "losses": 2
+    },
+    {
+      "team": "USA",
+      "wins": 2,
+      "losses": 5
+    }
+  ]
+}

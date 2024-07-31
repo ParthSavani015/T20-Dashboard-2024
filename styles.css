@@ -1,0 +1,533 @@
+/* body {
+    display: flex;
+}
+.sidebar {
+    width: 300px;
+    height: 100vh;
+    background-color: #010;
+    padding: 10px;
+}
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    border-radius: 5px; 
+}
+.sidebar a:hover {
+    background-color: #495057;
+}
+
+.nav-link {
+    color: rgb(255, 255, 255); 
+}
+.nav-link:hover {
+    color: white !important;
+}
+.nav-link:visited {
+    color: rgb(246, 246, 246) !important;
+}
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #262626;
+    overflow-y: auto;
+}
+.content h1{
+    color: #ddd;
+}
+
+.logo {
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.content .head {
+    background-color: #010;
+    border-radius: 8px;
+    
+}
+
+.analysis-box {
+    border: 1px solid #767373;
+    padding: 6px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    background-color: #a4a6a9;
+     overflow:hidden; 
+
+}
+
+
+.analysis-box h4{
+    color: #b1aeae;
+    padding: 13px;
+
+}
+.analysis-box .rank{
+    background: #495057;
+    padding: 80px;
+    border-radius: 8px;
+    
+}
+
+.analysis-box p{
+    color: #ddd;
+}
+
+.analysis-box1{
+    border: 1px solid #767373;
+    padding: 5px;
+    margin-bottom: 20px;
+    width: 400px;
+    height: 650px;
+    border-radius: 8px;
+    background-color: #a4a6a9;       
+}
+.analysis-box1 h4{
+    color: #b1aeae;
+    padding: 13px;
+
+}
+
+.analysis-box1 .rank{
+    background: #495057;
+    padding: 185px;
+    border-radius: 8px;
+  }
+.analysis-box1 .rank p{
+    color: #ddd;
+}
+
+.batting-rank-container {
+    height: 250px; 
+    overflow-y: auto;
+}
+
+.batting-rank-container table {
+    width: 100%; 
+    border-collapse: collapse; 
+   
+}
+
+.batting-rank-container th, .batting-rank-container td {
+    text-align: center;
+    padding: 8px; 
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd; 
+}
+
+.batting-rank-container th {
+    background-color: #333;
+    color: #fff; 
+}
+
+.batting-rank-container td {
+    
+    background-color: #444; 
+    color: #fff; 
+}
+
+.batting-rank-container tr:nth-child(even) {
+    background-color: #555; 
+    
+} 
+
+.batting-rank-container tr:nth-child(odd) {
+    background-color: #666;
+}
+
+.batting-rank-container thead {
+    position: sticky;
+    top: 0;
+    background: #333;
+    z-index: 1;
+} */
+
+
+body {
+    display: flex;
+    background-color: #262626;
+}
+
+.sidebar {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 265px;
+    height: auto;
+    background-color: #010;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    border-radius: 5px;
+}
+
+.sidebar a:hover {
+    background-color: #495057;
+}
+
+.nav-link {
+    color: rgb(255, 255, 255);
+}
+
+.nav-link:hover {
+    color: white !important;
+}
+
+.nav-link:visited {
+    color: rgb(246, 246, 246) !important;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #262626;
+    overflow-y: auto;
+}
+
+.content h1 {
+    color: #ddd;
+}
+
+.logo {
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.content .head {
+    background-color: #010;
+    border-radius: 8px;
+}
+
+
+.analysis-box1{
+    margin-top:4px ;
+    height: 310px;
+}
+
+.analysis-box, .analysis-box1 {
+    border: 1px solid #767373;
+    padding: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #a4a6a9;
+    overflow: hidden;
+}
+
+.analysis-box h4, .analysis-box1 h4 {
+    color: #b1aeae;
+    padding: 13px;
+}
+
+.analysis-box .rank, .analysis-box1 .rank {
+    background: #495057;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.analysis-box p, .analysis-box1 p {
+    color: #ddd;
+}
+
+.batting-rank-container, .strike-rate-container, .point-table-container {
+    max-height: 150px; /* Set initial height */
+    overflow: hidden;
+    transition: max-height 0.3s ease; /* Smooth transition */
+}
+
+.batting-rank-container.show-more, .strike-rate-container.show-more {
+    max-height: 250px; /* New height after clicking Load More */
+    overflow-y: auto; /* Enable scrolling */
+}
+
+.batting-rank-container table, .strike-rate-container table, .point-table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.batting-rank-container th, .batting-rank-container td, 
+.strike-rate-container th, .strike-rate-container td, 
+.point-table-container th, .point-table-container td {
+    text-align: center;
+    padding: 7px;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+}
+
+.batting-rank-container th, .strike-rate-container th, .point-table-container th {
+    background-color: #333;
+    color: #fff;
+}
+
+.batting-rank-container td, .strike-rate-container td, .point-table-container td {
+    background-color: #444;
+    color: #fff;
+}
+
+.batting-rank-container tr:nth-child(even), .strike-rate-container tr:nth-child(even), .point-table-container tr:nth-child(even) {
+    background-color: #555;
+}
+
+.batting-rank-container tr:nth-child(odd), .strike-rate-container tr:nth-child(odd), .point-table-container tr:nth-child(odd) {
+    background-color: #666;
+}
+
+.batting-rank-container thead, .strike-rate-container thead, .point-table-container thead {
+    position: sticky;
+    top: 0;
+    background: #333;
+    z-index: 1;
+}
+
+#load-more-btn, #load-more-strike-rate-btn {
+    background-color: black; /* Button background color */
+    padding: 15px;
+    color: white; /* Text color on the button */
+    border: none; /* Remove border */
+    margin-top: -15px; /* Move the button up by 15px (adjust as needed) */
+    position: relative; /* Ensure button can be moved with relative positioning */
+    top: -10px; /* Further move the button up */
+}
+
+#load-more-btn:hover, #load-more-strike-rate-btn:hover {
+    background-color: #333; /* Darker shade for hover effect */
+    color: white; /* Ensure text remains white on hover */
+}
+
+
+.point-table-container {
+    max-height: 100%; /* Adjust based on your design needs */
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.point-table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.point-table-container th, .point-table-container td {
+    text-align: center;
+    padding: 7px;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+}
+
+.point-table-container th {
+    background-color: #333;
+    color: #fff;
+}
+
+.point-table-container td {
+    background-color: #444;
+    color: #fff;
+}
+
+.point-table-container tr:nth-child(even) {
+    background-color: #555;
+}
+
+.point-table-container tr:nth-child(odd) {
+    background-color: #666;
+}
+
+.point-table-container thead {
+    position: sticky;
+    top: 0;
+    background: #333;
+    z-index: 1;
+}
+
+
+.point-table-container2 {
+    max-height: 300px; /* Adjust as needed */
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.point-table-container2 table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.point-table-container2 th, .point-table-container2 td {
+    text-align: center;
+    padding: 7px;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+}
+
+.point-table-container2 th {
+    background-color: #333;
+    color: #fff;
+}
+
+.point-table-container2 td {
+    background-color: #444;
+    color: #fff;
+}
+
+.point-table-container2 tr:nth-child(even) {
+    background-color: #555;
+}
+
+.point-table-container2 tr:nth-child(odd) {
+    background-color: #666;
+}
+
+.point-table-container2 thead {
+    position: sticky;
+    top: 0;
+    background: #333;
+    z-index: 1;
+}
+/* img load og point table  */
+.Bowling-Table-container {
+    max-height: 150px; /* Set initial height */
+    overflow: hidden;
+    transition: max-height 0.3s ease; /* Smooth transition */
+}
+
+.Bowling-Table-container.show-more {
+    max-height: 250px; /* New height after clicking Load More */
+    overflow-y: auto; /* Enable scrolling */
+}
+
+
+
+
+.Bowling-Table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.Bowling-Table-container th, .Bowling-Table-container td {
+    text-align: center;
+    padding: 7px;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+}
+
+.Bowling-Table-container th {
+    background-color: #333;
+    color: #fff;
+}
+
+.Bowling-Table-container td {
+    background-color: #444;
+    color: #fff;
+}
+
+.Bowling-Table-container tr:nth-child(even) {
+    background-color: #555;
+}
+
+.Bowling-Table-container tr:nth-child(odd) {
+    background-color: #666;
+}
+
+.Bowling-Table-container thead {
+    position: sticky;
+    top: 0;
+    background: #333;
+    z-index: 1;
+}
+
+
+
+#load-more-bowling-btn {
+    background-color: black; /* Button background color */
+    padding: 15px;
+    color: white; /* Text color on the button */
+    border: none; /* Remove border */
+    margin-top: -15px; /* Move the button up by 15px (adjust as needed) */
+    position: relative; /* Ensure button can be moved with relative positioning */
+    top: -10px; /* Further move the button up */
+}
+
+#load-more-bowling-btn:hover {
+    background-color: #333; /* Darker shade for hover effect */
+    color: white; /* Ensure text remains white on hover */
+}
+
+
+.economy-container {
+    max-height: 150px; /* Set initial height */
+    overflow: hidden;
+    transition: max-height 0.3s ease; /* Smooth transition */
+}
+
+.economy-container.show-more {
+    max-height: 250px; /* New height after clicking Load More */
+    overflow-y: auto; /* Enable scrolling */
+}
+
+.economy-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.economy-container th, .economy-container td {
+    text-align: center;
+    padding: 7px;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+}
+
+.economy-container th {
+    background-color: #333;
+    color: #fff;
+}
+
+.economy-container td {
+    background-color: #444;
+    color: #fff;
+}
+
+.economy-container tr:nth-child(even) {
+    background-color: #555;
+}
+
+.economy-container tr:nth-child(odd) {
+    background-color: #666;
+}
+
+.economy-container thead {
+    position: sticky;
+    top: 0;
+    background: #333;
+    z-index: 1;
+}
+
+#load-more-economy-btn {
+    background-color: black; /* Button background color */
+    padding: 15px;
+    color: white; /* Text color on the button */
+    border: none; /* Remove border */
+    margin-top: -15px; /* Move the button up by 15px (adjust as needed) */
+    position: relative; /* Ensure button can be moved with relative positioning */
+    top: -10px; /* Further move the button up */
+}
+
+#load-more-economy-btn:hover {
+    background-color: #333; /* Darker shade for hover effect */
+    color: white; /* Ensure text remains white on hover */
+}

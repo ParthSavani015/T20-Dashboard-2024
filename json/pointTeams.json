@@ -1,0 +1,13 @@
+{
+    "Teams": [
+      { "No": 1, "Match": 9,"Team": "INDIA", "Point": 17 },
+      { "No": 2, "Match": 8,"Team": "AFGHANISTAN", "Point": 10 },
+      { "No": 3, "Match": 7,"Team": "AUSTRALIA", "Point": 10},
+      { "No": 4, "Match": 7,"Team": "BANGLADESH", "Point": 6 },
+      { "No": 5,"Match": 9, "Team": "SOUTH AFRICA", "Point": 16 },
+      { "No": 6,"Match": 8, "Team": "ENGLAND", "Point": 9 },
+      { "No": 7,"Match": 7, "Team": "WEST INDIES", "Point": 10 },
+      { "No": 8, "Match": 7,"Team": "USA", "Point": 5 }
+    ]
+}
+  

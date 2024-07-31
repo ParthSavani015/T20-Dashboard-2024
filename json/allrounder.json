@@ -1,0 +1,21 @@
+{
+  "allrounders": [
+    { "Player": "Hardik Pandya", "Runs": 250, "Wickets": 15, "Strike Rate": 143.0, "Economy": 7.0,"Photo": "img/hardik_pandya.png" },
+    { "Player": "Jason Holder", "Runs": 200, "Wickets": 20, "Strike Rate": 135.0, "Economy": 6.5, "Photo": "img/josn_holder.png"},
+    { "Player": "Ben Stokes", "Runs": 300, "Wickets": 5, "Strike Rate": 140.0, "Economy": 6.8 , "Photo": "img/ben_stroke.png" },
+    { "Player": "Ravindra Jadeja", "Runs": 180, "Wickets": 8, "Strike Rate": 130.0, "Economy": 6.0 , "Photo": "img/Ravindra_Jadeja.png"},
+    { "Player": "Shakib Al Hasan", "Runs": 270, "Wickets": 19, "Strike Rate": 145.0, "Economy": 6.2 , "Photo": "img/shakib_Al_hasan.png"},
+    { "Player": "Mohammad Nabi", "Runs": 160, "Wickets": 17, "Strike Rate": 140.0, "Economy": 6.4 , "Photo": "img/Mohammad_Nabi.png"},
+    { "Player": "Kyle Jamieson", "Runs": 190, "Wickets": 14, "Strike Rate": 130.0, "Economy": 7.0 , "Photo": "img/Kyle_Jamieson.png"},
+    { "Player": "Marcus Stoinis", "Runs": 210, "Wickets": 13, "Strike Rate": 140.0, "Economy": 6.7 , "Photo": "img/marcus_Stoinis.png"},
+    { "Player": "Andre Russell", "Runs": 230, "Wickets": 16, "Strike Rate": 150.0, "Economy": 6.5 , "Photo": "img/andre_russell.png"},
+    { "Player": "Glenn Maxwell", "Runs": 250, "Wickets": 12, "Strike Rate": 145.0, "Economy": 7.0 , "Photo": "img/Glenn_Maxwell.png"},
+    { "Player": "Chris Morris", "Runs": 170, "Wickets": 15, "Strike Rate": 140.0, "Economy": 6.9 , "Photo": "img/hardik_pandya.png"},
+    { "Player": "Nicolas Pooran", "Runs": 220, "Wickets": 8, "Strike Rate": 150.0, "Economy": 7.2 , "Photo": "img/hardik_pandya.png"},
+    { "Player": "Jofra Archer", "Runs": 140, "Wickets": 18, "Strike Rate": 125.0, "Economy": 6.6, "Photo": "img/jofra_archer.png" },
+    { "Player": "Rovman Powell", "Runs": 130, "Wickets": 16, "Strike Rate": 110.0, "Economy": 6.3, "Photo": "img/Rovman_Powell.png" },
+    { "Player": "Pat Cummins", "Runs": 160, "Wickets": 14, "Strike Rate": 130.0, "Economy": 6.8 , "Photo": "img/Pat_cummins.png"},
+    { "Player": "Mohammad Nawaz", "Runs": 140, "Wickets": 16, "Strike Rate": 135.0, "Economy": 6.7 , "Photo": "img/Mohammad_Nawaz.png"},
+    { "Player": "Sam Curran", "Runs": 190, "Wickets": 15, "Strike Rate": 140.0, "Economy": 6.5 , "Photo": "img/sam_curran.png"}
+  ]
+}
